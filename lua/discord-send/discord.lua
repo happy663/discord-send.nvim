@@ -6,7 +6,7 @@ M.config = {
 
 local function notify(message, level)
 	if M.config.notification then
-		notify(message, level)
+		vim.notify(message, level)
 	end
 end
 
@@ -64,7 +64,6 @@ local function create_discord_buffer()
 		end,
 	})
 end
-
 
 function M.setup(config)
 	M.config = vim.tbl_deep_extend("force", M.config, config or {})
