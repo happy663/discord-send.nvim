@@ -109,6 +109,4 @@ end
 M.send = send_to_discord
 M.notify = notify
 
-M.setup()
-
 return M
