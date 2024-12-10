@@ -65,6 +65,7 @@ local function create_discord_buffer()
 	})
 end
 
+
 function M.setup(config)
 	M.config = vim.tbl_deep_extend("force", M.config, config or {})
 	load_env(M.config.env_file_path)
